@@ -1,0 +1,10 @@
+{
+  "host": "localhost",
+  "database": "perf_test_db",
+  "user": "root",
+  "password": "",
+  "connectionLimit": 10,
+  "dbPort": 3306,
+  "httpPort": 8887,
+  "jdbcDriver": "com.mysql.jdbc.jdbc2.optional.MysqlDataSource"
+}
