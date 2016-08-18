@@ -3,6 +3,7 @@ A light business code generator for faster code.
 
 ## Usage
 
+### Configration
 modify `config.json` under the path `assembly/{env}/conf/` ,with the following content:
 
 ```javascript
@@ -15,3 +16,9 @@ modify `config.json` under the path `assembly/{env}/conf/` ,with the following c
   "dbPort": 3306,
   "jdbcDriver": "com.mysql.jdbc.jdbc2.optional.MysqlDataSource"
 }
+
+### Start
+
+```bash
+mvn spring-boot:run -Dserver.port=8888
+```
