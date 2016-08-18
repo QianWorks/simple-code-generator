@@ -1,5 +1,5 @@
 # simple-code-generator
-A light business code generator for faster code.
+A light code generator for faster code.
 
 ## Usage
 
