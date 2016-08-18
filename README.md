@@ -22,3 +22,4 @@ modify `config.json` under the path `assembly/{env}/conf/` ,with the following c
 ```bash
 mvn spring-boot:run -Dserver.port=8888
 ```
+or Run `Application.java` directly.
