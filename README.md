@@ -16,7 +16,7 @@ modify `config.json` under the path `assembly/{env}/conf/` ,with the following c
   "dbPort": 3306,
   "jdbcDriver": "com.mysql.jdbc.jdbc2.optional.MysqlDataSource"
 }
-
+```
 ### Start
 
 ```bash
