@@ -1,16 +1,7 @@
 package me.qiancheng.qianworks.codegen;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.zaxxer.hikari.HikariConfig;
-import com.zaxxer.hikari.HikariDataSource;
-import me.qiancheng.qianworks.codegen.domain.DbConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.util.ResourceUtils;
-
-import javax.sql.DataSource;
-import java.io.File;
 
 /**
  * 启动类
@@ -26,28 +17,4 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-    /**
-     * 数据源配置
-     * 可以将这一项配置在application.properties中
-     */
-    @Bean
-    public DataSource dataSource(DbConfig dbConfig) {
-        HikariConfig config = new HikariConfig();
-        config.setDataSourceClassName(dbConfig.getJdbcDriver());
-        config.addDataSourceProperty("serverName", dbConfig.getHost());
-        config.addDataSourceProperty("port", dbConfig.getDbPort());
-        config.addDataSourceProperty("databaseName", dbConfig.getDatabase());
-        config.addDataSourceProperty("user", dbConfig.getUser());
-        config.addDataSourceProperty("password", dbConfig.getPassword());
-        config.setMaximumPoolSize(dbConfig.getConnectionLimit());
-
-        return new HikariDataSource(config);
-    }
-
-    @Bean
-    public DbConfig readDbConfig() throws Exception {
-        File config = ResourceUtils.getFile("classpath:config.json");
-        ObjectMapper objectMapper = new ObjectMapper();
-        return objectMapper.readValue(config, DbConfig.class);
-    }
 }
