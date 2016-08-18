@@ -24,5 +24,4 @@ if [ -z "$SERVER_NAME" ]; then
 	SERVER_NAME=$(hostname)
 fi
 export SERVER_NAME=$SERVER_NAME
-export OUT_PROJECT_CONFIG_DIR="/home/project/java_server_config/${DEPLOY_DIR##*/}/config"
 

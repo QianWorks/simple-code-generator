@@ -5,14 +5,9 @@ if [ $(id -u) -ne 0 ];then
 	exit 1 
 fi
 
-#typeset MAIN_CLASS
-
 cd $(dirname $0)
 
 source ./init.sh
-
-#MAIN_CLASS='com.fenqile.outbiz.pay19.server.Main'
-
 
 # check pids
 function check_pids()
