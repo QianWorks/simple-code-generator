@@ -1,4 +1,4 @@
-package me.qiancheng.qianworks.codegen.domain;
+package me.qiancheng.qianworks.fastcode.domain;
 
 import lombok.Data;
 

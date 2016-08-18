@@ -1,9 +1,9 @@
-package me.qiancheng.qianworks.codegen.config;
+package me.qiancheng.qianworks.fastcode.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-import me.qiancheng.qianworks.codegen.domain.DbConfig;
+import me.qiancheng.qianworks.fastcode.domain.DbConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.ResourceUtils;

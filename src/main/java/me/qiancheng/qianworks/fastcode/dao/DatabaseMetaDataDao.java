@@ -1,6 +1,6 @@
-package me.qiancheng.qianworks.codegen.dao;
+package me.qiancheng.qianworks.fastcode.dao;
 
-import me.qiancheng.qianworks.codegen.domain.TableDesc;
+import me.qiancheng.qianworks.fastcode.domain.TableDesc;
 
 import java.util.List;
 

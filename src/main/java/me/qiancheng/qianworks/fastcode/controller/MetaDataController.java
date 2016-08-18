@@ -1,7 +1,7 @@
-package me.qiancheng.qianworks.codegen.controller;
+package me.qiancheng.qianworks.fastcode.controller;
 
-import me.qiancheng.qianworks.codegen.dao.DatabaseMetaDataDao;
-import me.qiancheng.qianworks.codegen.domain.TableDesc;
+import me.qiancheng.qianworks.fastcode.dao.DatabaseMetaDataDao;
+import me.qiancheng.qianworks.fastcode.domain.TableDesc;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;

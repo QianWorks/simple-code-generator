@@ -1,7 +1,7 @@
-package me.qiancheng.qianworks.codegen.dao.impl;
+package me.qiancheng.qianworks.fastcode.dao.impl;
 
-import me.qiancheng.qianworks.codegen.dao.DatabaseMetaDataDao;
-import me.qiancheng.qianworks.codegen.domain.TableDesc;
+import me.qiancheng.qianworks.fastcode.dao.DatabaseMetaDataDao;
+import me.qiancheng.qianworks.fastcode.domain.TableDesc;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;

@@ -1,4 +1,4 @@
-package me.qiancheng.qianworks.codegen;
+package me.qiancheng.qianworks.fastcode;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
